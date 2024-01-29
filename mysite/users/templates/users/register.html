@@ -1,0 +1,13 @@
+{% extends 'food/base.html' %}
+
+{% block body %}
+
+<h1> This is the sign up page</h1>
+<form method="POST">
+
+{% csrf_token %}
+{{ form }}
+<button type="submit">Save</button>
+</form>
+
+{% endblock %} 
